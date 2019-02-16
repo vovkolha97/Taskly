@@ -19,7 +19,9 @@ class TaskController: UITableViewController {
     }
     @IBAction func addTask2(_ sender: UIBarButtonItem) {
         print("Add task")
+        
         //Setting up alert controller
+        
         let alertController = UIAlertController(title: "Add Task", message: nil, preferredStyle: .alert)
         //Set up the actions
         let addAction = UIAlertAction(title: "Add", style: .default) { _ in
