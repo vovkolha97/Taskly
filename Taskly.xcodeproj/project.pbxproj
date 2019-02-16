@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		F241300B220DCAFB00A51CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241300A220DCAFB00A51CF7 /* AppDelegate.swift */; };
-		F241300D220DCAFB00A51CF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241300C220DCAFB00A51CF7 /* ViewController.swift */; };
 		F2413010220DCAFB00A51CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F241300E220DCAFB00A51CF7 /* Main.storyboard */; };
 		F2413012220DCAFE00A51CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2413011220DCAFE00A51CF7 /* Assets.xcassets */; };
 		F2413015220DCAFE00A51CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2413013220DCAFE00A51CF7 /* LaunchScreen.storyboard */; };
+		F241301D220DCC5F00A51CF7 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241301C220DCC5F00A51CF7 /* TaskController.swift */; };
+		F241301F2212076100A51CF7 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241301E2212076100A51CF7 /* task.swift */; };
+		F2413021221208D500A51CF7 /* taskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2413020221208D500A51CF7 /* taskStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2413007220DCAFB00A51CF7 /* Taskly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F241300A220DCAFB00A51CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F241300C220DCAFB00A51CF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F241300F220DCAFB00A51CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2413011220DCAFE00A51CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2413014220DCAFE00A51CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2413016220DCAFE00A51CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F241301C220DCC5F00A51CF7 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		F241301E2212076100A51CF7 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
+		F2413020221208D500A51CF7 /* taskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				F241300A220DCAFB00A51CF7 /* AppDelegate.swift */,
-				F241300C220DCAFB00A51CF7 /* ViewController.swift */,
 				F241300E220DCAFB00A51CF7 /* Main.storyboard */,
 				F2413011220DCAFE00A51CF7 /* Assets.xcassets */,
 				F2413013220DCAFE00A51CF7 /* LaunchScreen.storyboard */,
 				F2413016220DCAFE00A51CF7 /* Info.plist */,
+				F241301C220DCC5F00A51CF7 /* TaskController.swift */,
+				F241301E2212076100A51CF7 /* task.swift */,
+				F2413020221208D500A51CF7 /* taskStore.swift */,
 			);
 			path = Taskly;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F241300D220DCAFB00A51CF7 /* ViewController.swift in Sources */,
+				F241301D220DCC5F00A51CF7 /* TaskController.swift in Sources */,
+				F241301F2212076100A51CF7 /* task.swift in Sources */,
+				F2413021221208D500A51CF7 /* taskStore.swift in Sources */,
 				F241300B220DCAFB00A51CF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
 				INFOPLIST_FILE = Taskly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
 				INFOPLIST_FILE = Taskly/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
