@@ -14,6 +14,7 @@
 		F241301D220DCC5F00A51CF7 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241301C220DCC5F00A51CF7 /* TaskController.swift */; };
 		F241301F2212076100A51CF7 /* task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F241301E2212076100A51CF7 /* task.swift */; };
 		F2413021221208D500A51CF7 /* taskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2413020221208D500A51CF7 /* taskStore.swift */; };
+		F2FAFF47221C5DB300B45889 /* TasksUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FAFF46221C5DB300B45889 /* TasksUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F241301C220DCC5F00A51CF7 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		F241301E2212076100A51CF7 /* task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task.swift; sourceTree = "<group>"; };
 		F2413020221208D500A51CF7 /* taskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskStore.swift; sourceTree = "<group>"; };
+		F2FAFF46221C5DB300B45889 /* TasksUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		F2413009220DCAFB00A51CF7 /* Taskly */ = {
 			isa = PBXGroup;
 			children = (
-				F241300A220DCAFB00A51CF7 /* AppDelegate.swift */,
 				F241300E220DCAFB00A51CF7 /* Main.storyboard */,
-				F2413011220DCAFE00A51CF7 /* Assets.xcassets */,
-				F2413013220DCAFE00A51CF7 /* LaunchScreen.storyboard */,
-				F2413016220DCAFE00A51CF7 /* Info.plist */,
-				F241301C220DCC5F00A51CF7 /* TaskController.swift */,
-				F241301E2212076100A51CF7 /* task.swift */,
-				F2413020221208D500A51CF7 /* taskStore.swift */,
+				F2FAFF45221C5C7500B45889 /* System */,
+				F2FAFF44221C5C5F00B45889 /* Helpers */,
+				F2FAFF43221C5C4900B45889 /* Controllers */,
+				F2FAFF42221C5C1900B45889 /* Models */,
 			);
 			path = Taskly;
+			sourceTree = "<group>";
+		};
+		F2FAFF42221C5C1900B45889 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F241301E2212076100A51CF7 /* task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2FAFF43221C5C4900B45889 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F241301C220DCC5F00A51CF7 /* TaskController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F2FAFF44221C5C5F00B45889 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2413020221208D500A51CF7 /* taskStore.swift */,
+				F2FAFF46221C5DB300B45889 /* TasksUtility.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2FAFF45221C5C7500B45889 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F2413013220DCAFE00A51CF7 /* LaunchScreen.storyboard */,
+				F2413016220DCAFE00A51CF7 /* Info.plist */,
+				F241300A220DCAFB00A51CF7 /* AppDelegate.swift */,
+				F2413011220DCAFE00A51CF7 /* Assets.xcassets */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +179,7 @@
 				F241301D220DCC5F00A51CF7 /* TaskController.swift in Sources */,
 				F241301F2212076100A51CF7 /* task.swift in Sources */,
 				F2413021221208D500A51CF7 /* taskStore.swift in Sources */,
+				F2FAFF47221C5DB300B45889 /* TasksUtility.swift in Sources */,
 				F241300B220DCAFB00A51CF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
-				INFOPLIST_FILE = Taskly/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Taskly/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9WU55MK2SW;
-				INFOPLIST_FILE = Taskly/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Taskly/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

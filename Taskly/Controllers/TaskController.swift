@@ -107,7 +107,7 @@ extension TaskController {
         let deleteAction = UIContextualAction(style: .destructive, title: nil) { (action, sourceView, completionHandler) in
           
             //determine whether the task 'is done'
-            let isDone = self.taskStore.tasks[indexPath.section][indexPath.row].isDone
+            guard let isDone = self.taskStore.tasks[indexPath.section][indexPath.row].isDone else { return }
             //remove the task from apropriate array
             self.taskStore.removeTask(at: indexPath.row, isDone: isDone)
             
